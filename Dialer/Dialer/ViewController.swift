@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("Dialer")
+        for i in 1...100 {
+            print("\(i)")
+        }
     }
 
     override func didReceiveMemoryWarning() {
