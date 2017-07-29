@@ -10,8 +10,31 @@ import UIKit
 
 class DialerVC: UIViewController {
     
+    @IBOutlet weak var display: UILabel?
+    
+    var userIsInTheMiddleOfTyping = false
+    
     @IBAction func dialDigit(_ sender: UIButton) {
-        print("7")
+        let digit = sender.currentTitle!
+        if userIsInTheMiddleOfTyping{
+        print("\(digit)")
+        let textcurrentlydisplay = display!.text!
+        display!.text = textcurrentlydisplay + digit
+        } else {
+           display!.text = digit
+           userIsInTheMiddleOfTyping = true
+        }
+    }
+    
+   
+    @IBAction func btncall(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func btnClear(_ sender: UIButton) {
+        
+        display?.text = ""
+    
     }
     
 }
