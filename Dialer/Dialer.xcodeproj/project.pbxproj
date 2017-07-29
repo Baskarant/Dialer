@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		6E4420E31F1E6B520053DFAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4420E21F1E6B520053DFAD /* AppDelegate.swift */; };
-		6E4420E51F1E6B520053DFAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4420E41F1E6B520053DFAD /* ViewController.swift */; };
 		6E4420E81F1E6B520053DFAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4420E61F1E6B520053DFAD /* Main.storyboard */; };
 		6E4420EA1F1E6B520053DFAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4420E91F1E6B520053DFAD /* Assets.xcassets */; };
 		6E4420ED1F1E6B530053DFAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4420EB1F1E6B530053DFAD /* LaunchScreen.storyboard */; };
+		6EE0BC811F2CF5820007BCD1 /* DialerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE0BC801F2CF5820007BCD1 /* DialerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6E4420DF1F1E6B520053DFAD /* Dialer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dialer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4420E21F1E6B520053DFAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E4420E41F1E6B520053DFAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E4420E71F1E6B520053DFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E4420E91F1E6B520053DFAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E4420EC1F1E6B530053DFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E4420EE1F1E6B530053DFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EE0BC801F2CF5820007BCD1 /* DialerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,22 @@
 		6E4420E11F1E6B520053DFAD /* Dialer */ = {
 			isa = PBXGroup;
 			children = (
-				6E4420E21F1E6B520053DFAD /* AppDelegate.swift */,
-				6E4420E41F1E6B520053DFAD /* ViewController.swift */,
+				6EE0BC801F2CF5820007BCD1 /* DialerVC.swift */,
 				6E4420E61F1E6B520053DFAD /* Main.storyboard */,
+				6EE0BC7F1F2CEED60007BCD1 /* Supporting Files */,
+			);
+			path = Dialer;
+			sourceTree = "<group>";
+		};
+		6EE0BC7F1F2CEED60007BCD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E4420E21F1E6B520053DFAD /* AppDelegate.swift */,
 				6E4420E91F1E6B520053DFAD /* Assets.xcassets */,
 				6E4420EB1F1E6B530053DFAD /* LaunchScreen.storyboard */,
 				6E4420EE1F1E6B530053DFAD /* Info.plist */,
 			);
-			path = Dialer;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E4420E51F1E6B520053DFAD /* ViewController.swift in Sources */,
+				6EE0BC811F2CF5820007BCD1 /* DialerVC.swift in Sources */,
 				6E4420E31F1E6B520053DFAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +309,7 @@
 				6E4420F31F1E6B530053DFAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
